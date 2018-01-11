@@ -1,0 +1,15 @@
+This is a test txt
+1989-04-18
+1988-04-12
+Jiashuai Lu
+There must be one day when I am be able to create Samanth
+Just like this kind of thing
+I like study by myself
+It's quiet and no distractions.
+Natural Language Processing
+Stop doing this.
+Below and this line should not be printed
+1Below and this line should not be printed
+2Below and this line should not be printed
+3Below and this line should not be printed
+4Below and this line should not be printed
