@@ -68,10 +68,11 @@ main()
 
 
   FILE *corpus_txt;
-  corpus_txt = fopen ("/Users/judy/GraduateStudy/UTD/Fall2017/CS6320.001-NaturalLanguageProcessing/Homework/Homework1/corpus.txt", "r");
+  corpus_txt = fopen ("./sentences.txt", "r");
   if (corpus_txt == NULL)
     {
       printf ("File could not be opened.\n");
+      exit(-1);
     }
   else
     {
@@ -99,14 +100,15 @@ main()
           i++;
         }
     }
+  int valid_array_size = i;
 
 
-  qsort(array1, array_size, sizeof(struct array_element), compare_array_element);
+  qsort(array1, valid_array_size, sizeof(struct array_element), compare_array_element);
 
   printf("-----------This is lines after qsorting-----------\n");
-  for (i=0; i<array_size; i++)
+  for (i=0; i<valid_array_size; i++)
     {
-      printf("Line %d: ", i);
+      printf("Line %d: ", i+1);
       puts(array1[i].str1);
     }
 }
